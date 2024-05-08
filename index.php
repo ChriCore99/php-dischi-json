@@ -20,18 +20,20 @@
 
 <body>
 
-    <div>
-        <ul class="row list-unstyled justify-content-center" id="app">
-            <li class="col-3 m-4" v-for="disco in dischi">
-                <div class="card h-100">
-                    <img :src=`${disco.poster}` class="card-img-top p-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center text-white">{{ disco.title }}</h5>
-                        <p class="card-text text-center text-white">{{ disco.author }} <br> {{ disco.year }} </p>
+    <div id="app">
+        <div class="container">
+            <ul class="row list-unstyled justify-content-center" >
+                <li class="col-3 m-4" v-for="disco in dischi">
+                    <div class="card h-100">
+                        <img :src=`${disco.poster}` class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">{{ disco.title }}</h5>
+                            <p class="card-text text-center text-white">{{ disco.author }} <br> {{ disco.year }} </p>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- collegamento di vue a js -->
     <script src="./app.js"></script>
